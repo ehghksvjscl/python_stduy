@@ -7,9 +7,8 @@ pt1 = (1.0, 5.0)
 pt2 = (2.5, 1.5)
 
 
-# 두점 사이의 거리 구하기
+# 두점 사이의 거리 구하기 (일반, 네임드 듀플)
 from math import sqrt
-from msilib.schema import Class
 
 l_leng1 = sqrt((pt1[0] - pt2[0]) ** 2 + (pt1[1] - pt2[1]) ** 2)
 print(l_leng1)

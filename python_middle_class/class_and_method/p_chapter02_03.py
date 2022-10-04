@@ -16,7 +16,7 @@ class Car:
     # 클레스 변수(모든 인스턴스가 공유)
     price_per_raise: float = 1.2
 
-    def __init__(self, company: str, details: str) -> None:
+    def __init__(self, company: str, details: dict) -> None:
         self._company = company
         self._details = details
 
@@ -69,8 +69,8 @@ car1.detail_info()
 car2.detail_info()
 
 # 가격 정보(직접 접근)
-car1._details.get("price")
-car2._details.get("price")
+print(car1._details.get("가격"))
+print(car2._details.get("가격"))
 
 # 가격 정보(인상 전)
 print(car1.get_price())

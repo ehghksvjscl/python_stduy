@@ -45,14 +45,14 @@ students = (c + str(n) for c in "A B C D".split() for n in range(1, 21))
 for s in students:
     print(s)
 
-# 리스트 주의
+# 리스트 주의 (얕은 복사, 깊은 복사)
 marks1 = [["~"] * 3 for _ in range(4)]
 marks2 = [["!"] * 3] * 4
 
 print(marks1)
 print(marks2)
 
-# 수정
+# 수정 (수정된 값이 다르다.)
 marks1[0][1] = "X"
 marks2[0][1] = "X"
 

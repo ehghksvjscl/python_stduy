@@ -4,6 +4,8 @@ Special Method(Magic Method)
 클래스안에 정의할 수 있는 특별한(Built-in) Method
 """
 
+from __future__ import annotations
+
 # 클래스 예제2
 # (5, 2) + (4, 3) = (9, 5)
 # (10, 3) * 5 = (50 , 15)
@@ -11,7 +13,7 @@ Special Method(Magic Method)
 
 
 class Vector(object):
-    def __init__(self, *args):
+    def __init__(self, *args: tuple):
         """
         Create a vector
         example : v = Vactor(5, 10)
@@ -21,18 +23,18 @@ class Vector(object):
         else:
             self._x, self._y = args
 
-    def __repr__(self) -> str:
+    def __repr__(self: Vector) -> str:
         """Return the vector Informations"""
         return f"Vector({self._x}. {self._y})"
 
-    def __add__(self, other):
+    def __add__(self, other: Vector) -> Vector:
         """Return added the vector"""
         return Vector(self._x + other._x, self._y + other._y)
 
-    def __mul__(self, n):
+    def __mul__(self, n: int) -> Vector:
         return Vector(self._x * n, self._y * n)
 
-    def __bool__(self):
+    def __bool__(self) -> bool:
         return bool(max(self._x, self._y))
 
 
