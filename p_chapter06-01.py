@@ -7,7 +7,7 @@ Iterator, Generator
 # 파이썬 반복 가능한 타입
 # collections, text file, List, Dict, Set, Tuple, unpacking, *args... : iterable)
 
-# 반복 가능한 이유? -> iter(x) 함수 호출
+# 반복 가능한 이유? -> iter(x) 함수 호출 가능
 from typing import Iterable
 
 
