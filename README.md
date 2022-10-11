@@ -1,5 +1,7 @@
 ## python 중급 (인프런)
 
+## python 중고급 (인프런)
+
 - class_method
 
 ## 설치
