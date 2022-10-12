@@ -30,3 +30,4 @@ def also_square(nums):
 print("Ex2 > ", also_square(digits1))
 
 # Ex3
+
