@@ -30,4 +30,35 @@ def also_square(nums):
 print("Ex2 > ", also_square(digits1))
 
 # Ex3
+digits2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+result = list(filter(lambda x: x % 2 == 0, digits2))
+print("Ex3 > ", result)
 
+
+def also_evens(nums):
+    def even(num):
+        if num % 2 == 0:
+            return num
+
+    return list(filter(even, nums))
+
+
+print("Ex3 > ", also_evens(digits2))
+
+# Ex4
+from functools import reduce
+
+digits3 = [x for x in range(1, 101)]
+result = reduce(lambda total, x: total + x, digits3)
+
+print("Ex4 > ", result)
+
+
+def also_add(nums):
+    def total(x, y):
+        return x + y
+
+    return reduce(total, nums)
+
+
+print("Ex4 > ", also_add(digits3))
