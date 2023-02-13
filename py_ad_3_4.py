@@ -1,5 +1,5 @@
 """
-챕터 4
+챕터 3
  - Descriptor(1)
 키워드 - descriptor, get, set, property
 
