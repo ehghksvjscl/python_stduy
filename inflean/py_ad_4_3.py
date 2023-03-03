@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # 클래스 선언
     c = GifConverter(
         "./project/images/*.png",
-        "./project/image_out/result.gif",
+        "../project/image_out/result.gif",
         (320, 240),
     )
 

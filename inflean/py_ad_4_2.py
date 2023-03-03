@@ -17,7 +17,7 @@ from PIL import Image
 
 # 이미지, 결과 생성 경로
 path_in = "./project/images/*.png"
-path_out = "./project/image_out/result.gif"
+path_out = "../project/image_out/result.gif"
 
 # 첫 번째 이미지 & 모든 이미지 리스트 패킹
 # img, *images = [Image.open(f) for f in sorted(glob.glob(path_in))]

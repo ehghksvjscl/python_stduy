@@ -19,7 +19,7 @@ def write_file(fileName, method):
     f.close()  # __exit__
 
 
-with write_file("./data/test4.txt", "w") as f:
+with write_file("../data/test4.txt", "w") as f:
     f.write("Context Manager test4")
 
 # Ex2

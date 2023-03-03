@@ -10,7 +10,7 @@ from py_ad_4_3 import GifConverter as gfc
 # 클래스 생성
 c = gfc(
     "./project/images/*.png",
-    "./project/image_out/result.gif",
+    "../project/image_out/result.gif",
     (320, 240),
 )
 

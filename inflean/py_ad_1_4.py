@@ -8,14 +8,14 @@ Keyword - Contextlib __enter__, __exit__ exception
 """
 
 # Ex1(with이 나오기 이전)
-file = open("./data/test1.txt", "w")
+file = open("../data/test1.txt", "w")
 try:
     file.write("Context Manager test1")
 finally:
     file.close()
 
 # Ex2(with이 나온 후)
-with open("./data/test2.txt", "w") as f:
+with open("../data/test2.txt", "w") as f:
     f.write("Context Manager test2")
 
 # Ex3
@@ -38,5 +38,5 @@ class MyFileWriter:
         self.fileObj.close()
 
 
-with MyFileWriter("./data/test3.txt", "w") as f:
+with MyFileWriter("../data/test3.txt", "w") as f:
     f.write("Context Manager test3")
