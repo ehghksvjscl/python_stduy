@@ -1,5 +1,5 @@
 import random
-from typeing import List
+from typing import List
 
 OPTIONS: List = ["rock", "paper", "scissors"]
 
@@ -7,7 +7,7 @@ def get_computer_choice():
     return random.choice(OPTIONS)
 
 def get_human_choice():
-    return optins[int(input("Enter your choice: ")) - 1]
+    return OPTIONS[int(input("Enter your choice: ")) - 1]
 
 def print_options():
     print('\n'.join(f'({i}) {option.title()}' for i, option in enumerate(OPTIONS, 1)))
@@ -17,7 +17,7 @@ def pirnt_choice(human_choice, computer_choice):
     print(f"Computer chose {computer_choice}")
 
 def print_win_lose(human_choice, computer_choice, human_beats, human_loses_to):
-    if human_choice == human_loses_to:
+    if computer_choice == human_loses_to:
         print(f"Sorry, computer: {computer_choice} you: {human_choice} lose!")
     elif computer_choice == human_beats:
         print(f"Oh, computer: {computer_choice} you: {human_choice} win")
