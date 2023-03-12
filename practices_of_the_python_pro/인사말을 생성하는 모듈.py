@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class Greeter:
     def __init__(self, name: str) -> None:
         self.name = name
@@ -21,7 +22,6 @@ class Greeter:
         print(f"Hi my name is {self.name}, and welcome to {store}")
         print(f"How\'s your {self._day()} {self._part_of_day()} going?")
         print(f"Here\'s a coupon for 20% off!")
-
 
 greeter = Greeter("uno")
 greeter.greet("kidsnote")
